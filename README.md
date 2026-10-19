@@ -18,7 +18,7 @@ Each installation gets one review per calendar month. The app reviews the first 
 - Someone opens it, and it is not a draft.
 - Someone marks a draft pull request as ready for review.
 
-The app skips a draft pull request until someone marks it ready for review. Commits pushed after the review do not start a new review.
+The app skips a draft pull request until someone marks it ready for review. Commits pushed after the review do not start a new review. If a review fails for a technical reason, the next push to that pull request retries it, up to three attempts in total, and the failed attempt does not count against the month.
 
 One installation can cover one repository or many, depending on the repositories you select. All repositories under one installation share the same monthly review.
 
